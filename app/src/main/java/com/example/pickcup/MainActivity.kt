@@ -60,9 +60,10 @@ class MainActivity : ComponentActivity() {
     }
 }
 fun getCup():Cup{
+    val name="시선 강남점"
     val imgUrl="https://picsum.photos/200/300"
     val videoUrl="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-    val res=Cup("시선 강남점",imgUrl,videoUrl)
+    val res=Cup(name,imgUrl,videoUrl)
     return res
 }
 @Composable
@@ -171,11 +172,4 @@ fun CupVideoPlayer(videoUrl: String, modifier: Modifier = Modifier) {
             .height(300.dp) // 영상 플레이어 높이 지정
     )
 }
-//
-//@Preview(showBackground = true)
-//@Composable
-//fun GreetingPreview() {
-//    PickCupTheme {
-//        Greeting("Android")
-//    }
-//}
+
